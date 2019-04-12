@@ -167,9 +167,9 @@ void StartSimulation::PrintStats()
   cout << "median student wait time : " << medianWait << endl;
   cout << "longest student wait time : " << longestWait << endl;
   cout << "number of students waiting longer than 10 minutes : " << num10Wait << endl;
-  cout << "mean window idle time" << meanWindowIdle << endl;
-  cout << "longest window idle time" << longestWindowIdle << endl;
-  cout << "number of windows idle over 5 minutes" << numWindowIdle5 << endl;
+  cout << "mean window idle time : " << meanWindowIdle << endl;
+  cout << "longest window idle time : " << longestWindowIdle << endl;
+  cout << "number of windows idle over 5 minutes : " << numWindowIdle5 << endl;
 }
 
 bool StartSimulation::finish()

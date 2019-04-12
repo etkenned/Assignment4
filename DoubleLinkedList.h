@@ -12,7 +12,7 @@ class DoubleLinkedList
     bool isEmpty();
     void insertFront(int w);
     void insertFront(int w, int t);
-    StudentNode* deleteFront();
+    StudentNode * deleteFront();
     void insertBack(int w);
     void printWait();
     void advanceTime();

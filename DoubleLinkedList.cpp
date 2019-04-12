@@ -13,7 +13,7 @@ DoubleLinkedList::~DoubleLinkedList()
 {
   while(front)//cycles through list and sets every node to NULL before deleting them
   {
-    StudentNode* temp = front;
+    StudentNode * temp = front;
     front = front->right;
     temp->right = NULL;
     temp->left = NULL;
@@ -41,7 +41,7 @@ void DoubleLinkedList::insertFront(int w)// adds a node to the list at the front
   }
   else
   {
-    StudentNode* temp = new StudentNode(w);
+    StudentNode * temp = new StudentNode(w);
     temp->right = front;
     front = temp;
   }
@@ -55,7 +55,7 @@ void DoubleLinkedList::insertFront(int w, int t)
   }
   else
   {
-    StudentNode* temp = new StudentNode(w, t);
+    StudentNode * temp = new StudentNode(w, t);
     temp->right = front;
     front = temp;
   }
@@ -65,7 +65,7 @@ StudentNode* DoubleLinkedList::deleteFront() // removes the front node from the 
 {
   if(front != back)
   {
-    StudentNode* temp = front;
+    StudentNode * temp = front;
     front = front->right;
     front->left = NULL;
     temp->right = NULL;
@@ -75,8 +75,7 @@ StudentNode* DoubleLinkedList::deleteFront() // removes the front node from the 
   else
   {
     delete front;
-    front = back;
-    back = 0;
+    front = back = 0;
   }
 }
 
@@ -89,7 +88,7 @@ void DoubleLinkedList::insertBack(int w) // adds a node the the back of the list
   }
   else
   {
-    StudentNode* temp = new StudentNode(w);
+    StudentNode * temp = new StudentNode(w);
     back->right = temp;
     back = temp;
   }
@@ -97,7 +96,7 @@ void DoubleLinkedList::insertBack(int w) // adds a node the the back of the list
 
 void DoubleLinkedList::printWait() //prints how long every student in the line has waited
 {
-  StudentNode* current = front;
+  StudentNode * current = front;
   cout << "The wait time of every student in the line: ";
   while(current != NULL)
   {
