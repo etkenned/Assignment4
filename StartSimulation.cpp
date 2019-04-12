@@ -11,9 +11,6 @@ StartSimulation::StartSimulation(string fileName)
 {
   data = Queue();
   windowLine = Queue();
-  Windows = new int [1];
-  numWindows = 0;
-
   fstream inputFile(fileName);
   string line = "";
   if(inputFile.is_open())

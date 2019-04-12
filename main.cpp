@@ -5,8 +5,6 @@ using namespace std;
 
 int main(int argc, char** argv)
 {
-
-
   if(argc > 1) // checks for user input of file name
   {
     StartSimulation run = StartSimulation(argv[1]);

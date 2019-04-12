@@ -109,7 +109,7 @@ void DoubleLinkedList::printWait() //prints how long every student in the line h
 
 void DoubleLinkedList::advanceTime() // advances time by one for every node in the list
 {
-  StudentNode* current = front;
+  StudentNode * current = front;
   while(current != NULL)
   {
     current->timeWaited++;
